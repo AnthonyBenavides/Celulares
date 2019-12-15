@@ -22,7 +22,7 @@
 				<form method="POST" action="/asesor" accept-charset="UTF-8" style="display:inline">
 					@csrf			
 					<div class="form-group">
-						<label for="asesor">Asesor</label>
+						<label for="asesor">Nombre</label>
 						<input type="text" class="form-control" name="ase_nom" id="ase_nom" aria-describedby="asesorlHelp"
 						value={{old('ase_nom')}}>
 						{!! $errors->first('ase_nom', '<div class="alert alert-danger" role="alert">:message</div>')!!}

@@ -88,8 +88,9 @@ class AsesorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
+    public function edit(Request $request, $id)
+    {   
+       
         $asesor = Asesor::findOrFail($id);
         $estados = Estado::all();
         return view('asesor.edit', compact('asesor','estados'));
@@ -104,6 +105,15 @@ class AsesorController extends Controller
      */
     public function update(Request $request, $id)
     {
+        request()->validate([
+            'ase_nom' => 'required',
+             'ase_ape' => 'required',
+             'fecha_naci' => 'required',
+             'ase_gene' => 'required',
+             'ase_tele' => 'required',
+             'ase_docu' => 'required',
+             'id_estado' => 'required'
+         ]);
         $asesor = Asesor::findOrFail($id);
         $asesor->fill($request->all());
         $asesor->save();

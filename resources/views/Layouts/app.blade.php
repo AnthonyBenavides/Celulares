@@ -15,13 +15,15 @@
 		<nav class="navbar navbar-dark bg-warning">
 				<a class="navbar-brand" href="#">Salma Celulares</a>
 				<ul class="nav justify-content-center">
-					<li class="nav-item">
-						<a class="navbar-brand" href="{{route('producto.index')}}">Listado Productos</a>
+					<li class="nav-item">					
 						<a class="navbar-brand" href="{{route('asesor.index')}}">Asesores</a>
 						<a class="navbar-brand" href="{{route('producto.index')}}">Productos</a>
 						<a class="navbar-brand" href="{{route('marca.index')}}">Marcas</a>
 						<a class="navbar-brand" href="{{route('proveedor.index')}}">Proveedores</a>
 						<a class="navbar-brand" href="{{route('rol.index')}}">Roles</a>
+						<a class="navbar-brand" href="{{route('estado.index')}}">Estados</a>
+						<a class="navbar-brand" href="{{route('local.index')}}">Locales</a>
+						<a class="navbar-brand" href="{{route('usuario.index')}}">Usuarios</a>
 					</li>
 				
 			   </ul>

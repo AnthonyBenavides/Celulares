@@ -90,12 +90,11 @@
                      <a href="{{route('marca.index')}}">Listado Marcas</a>
                      <a href="{{route('proveedor.index')}}">Listado Proveedores</a>
                      <a href="{{route('rol.index')}}">Listado Roles</a>
-                </div>
-                <div class="links">
-                  
                      <a href="{{route('asesor.index')}}">Asesores</a>
+                     <a href="{{route('estado.index')}}">Estados</a>
+                     <a href="{{route('local.index')}}">Locales</a>
+                     <a href="{{route('usuario.index')}}">Usuarios</a>
                 </div>
-            </div>
-        </div>
+          </div>
     </body>
 </html>
