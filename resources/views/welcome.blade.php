@@ -89,6 +89,7 @@
                      <a href="{{route('producto.index')}}">Listado Productos</a>
                      <a href="{{route('marca.index')}}">Listado Marcas</a>
                      <a href="{{route('proveedor.index')}}">Listado Proveedores</a>
+                     <a href="{{route('rol.index')}}">Listado Roles</a>
                 </div>
             </div>
         </div>

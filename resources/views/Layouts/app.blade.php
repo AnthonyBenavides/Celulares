@@ -12,18 +12,21 @@
 </head>
 <body>
 
-		<nav class="navbar navbar-dark bg-primary">
-				<a class="navbar-brand" href="#">Salma</a>
+		<nav class="navbar navbar-dark bg-warning">
+				<a class="navbar-brand" href="#">Salma Celulares</a>
 				<ul class="nav justify-content-center">
 					<li class="nav-item">
-						<a class="navbar-brand" href="{{route('producto.index')}}">Listado Productos</a>
+						<a class="navbar-brand" href="{{route('producto.index')}}">Productos</a>
+						<a class="navbar-brand" href="{{route('marca.index')}}">Marcas</a>
+						<a class="navbar-brand" href="{{route('proveedor.index')}}">Proveedores</a>
+						<a class="navbar-brand" href="{{route('rol.index')}}">Roles</a>
 					</li>
 				
 			   </ul>
 		  </nav>
 
 		  <div class="container">
-			<div style="background-color:#333; color:#9d9d9d; margin-top:5px">
+			<div style="background-color:#ffc107; color:#FFFFFF; margin-top:7px">
 			<h1 class="nav navbar-nav">@yield('title2')</h1>
 			</div>
 		
