@@ -88,6 +88,10 @@
                   
                      <a href="{{route('producto.index')}}">Listado Productos</a>
                 </div>
+                <div class="links">
+                  
+                     <a href="{{route('asesor.index')}}">Asesores</a>
+                </div>
             </div>
         </div>
     </body>

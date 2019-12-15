@@ -17,6 +17,7 @@
 				<ul class="nav justify-content-center">
 					<li class="nav-item">
 						<a class="navbar-brand" href="{{route('producto.index')}}">Listado Productos</a>
+						<a class="navbar-brand" href="{{route('asesor.index')}}">Asesores</a>
 					</li>
 				
 			   </ul>
