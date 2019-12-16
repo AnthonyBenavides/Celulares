@@ -51,7 +51,7 @@
                             style="display:inline">
                             @csrf
                             <input name="_method" type="hidden" value="DELETE">					
-                            <button type="submit" class="btn btn-danger btn-sm fa fa-trash" style="margin-right: 10px">	</button>				
+                            <button type="submit" class="btn btn-danger btn-sm fa fa-trash" style="margin-right: 6px">	</button>				
                         </form>
                         <a href="/usuario/{{$usuario->id_usu}}/edit"><i class="btn btn-info btn-sm fa fa-edit"></i></a>
                     </td>
