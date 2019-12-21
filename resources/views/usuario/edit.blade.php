@@ -24,7 +24,7 @@
 						</div>
 						<div class="form-group">
 							<label for="fecha_naci">Fecha de nacimiento</label>
-							<input type="text" value = '{{$usuario->fecha_naci}}' class="form-control" name="fecha_naci"/>
+							<input type="date" value = '{{$usuario->fecha_naci}}' class="form-control" name="fecha_naci"/>
 							{!! $errors->first('fecha_naci', '<div class="alert alert-danger" role="alert">:message</div>')!!}
 						</div>
 						<div class="form-group">
