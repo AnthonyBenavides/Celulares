@@ -86,6 +86,7 @@
 
                 <div class="links">
                   
+                    <a href="{{route('movimiento.index')}}">Listado Movimientos</a>
                      <a href="{{route('producto.index')}}">Listado Productos</a>
                      <a href="{{route('marca.index')}}">Listado Marcas</a>
                      <a href="{{route('proveedor.index')}}">Listado Proveedores</a>

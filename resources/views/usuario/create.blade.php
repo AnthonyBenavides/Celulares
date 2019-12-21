@@ -35,7 +35,7 @@
 					</div>
 					<div class="form-group">
 						<label for="fecha_naci">Fecha de nacimiento</label>
-						<input type="text" class="form-control" name="fecha_naci" id="fecha_naci" aria-describedby="usuariolHelp"
+						<input type="date" class="form-control" name="fecha_naci" id="fecha_naci" aria-describedby="usuariolHelp"
 						value={{old('fecha_naci')}}>
 						{!! $errors->first('fecha_naci', '<div class="alert alert-danger" role="alert">:message</div>')!!}
 					</div>

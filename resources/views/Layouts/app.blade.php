@@ -16,6 +16,7 @@
 				<a class="navbar-brand" href="#">Salma Celulares</a>
 				<ul class="nav justify-content-center">
 					<li class="nav-item">	
+						<a class="navbar-brand" href="{{route('movimiento.index')}}">Movimientos</a>
 						<a class="navbar-brand" href="{{route('producto.index')}}">Productos</a>
 						<a class="navbar-brand" href="{{route('usuario.index')}}">Usuarios</a>				
 						<a class="navbar-brand" href="{{route('asesor.index')}}">Asesores</a>
