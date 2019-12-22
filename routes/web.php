@@ -23,5 +23,5 @@ Route::resource('rol', 'RolController');
 Route::resource('estado', 'EstadoController');
 Route::resource('local', 'LocalController');
 Route::resource('usuario', 'UserController');
-
+Route::resource('movimiento', 'MovimientoController');
 Auth::routes();
