@@ -93,7 +93,7 @@
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf                 
                     </form>
-                    @endauth
+                   
                     <div class="dropdown">
 				<ul class="nav justify-content-center"> 
 				<button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -108,9 +108,11 @@
 			<a class="dropdown-item"  href="{{route('estado.index')}}">Estados</a>
 			<a class="dropdown-item"  href="{{route('local.index')}}">Locales</a>
 			<a class="dropdown-item"  href="{{route('usuario.index')}}">Usuarios</a>
+            <a class="dropdown-item"  href="{{route('movimiento.index')}}">Movimientos</a>
   </div>
   </div>
   </ul>
+  @endauth
                 </div>
             @endif
             <div class="container">

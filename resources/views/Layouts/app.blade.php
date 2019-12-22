@@ -54,6 +54,7 @@
 			<a class="dropdown-item"  href="{{route('estado.index')}}">Estados</a>
 			<a class="dropdown-item"  href="{{route('local.index')}}">Locales</a>
 			<a class="dropdown-item"  href="{{route('usuario.index')}}">Usuarios</a>
+			<a class="dropdown-item"  href="{{route('movimiento.index')}}">Movimientos</a>
   </div>
   </div>		
 				</ul>

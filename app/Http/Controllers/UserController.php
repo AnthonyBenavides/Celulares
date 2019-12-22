@@ -132,6 +132,7 @@ class UserController extends Controller
          ]);
         $usuario = Usuario::findOrFail($id);
         $usuario->fill($request->all());
+        $usuario->password = Hash::make($request->password);
         $usuario->save();
         return redirect()->route('usuario.index')->with('status','actualizado');
     }
