@@ -6,13 +6,13 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\DB;//Fachada para utilizar Query Builder
 
-use App\User;
+use App\Usuario;
 use App\Estado;
 use App\Rol;
 use Illuminate\Support\Facades\Hash;
 
 
-class UsuarioController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,12 +21,12 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        $usuarios = DB::table('tb_usuarios as c')
+        $users = DB::table('users as c')
                     ->join('tb_estados','c.id_estado','=','tb_estados.id_estado')
                     ->join('tb_roles','c.id_rol','=','tb_roles.id_rol')
-                    ->select('c.id_usu','c.usu_nom','usu_ape','fecha_naci','usu_gene','usu_tele','usu_correo','usu_docu','password','c.id_rol','tb_roles.nom_rol','c.id_estado','tb_estados.nom_estado')
+                    ->select('c.id','c.name','usu_ape','usu_docu','email','fecha_naci','usu_gene','usu_tele','c.id_rol','tb_roles.nom_rol','c.id_estado','tb_estados.nom_estado','password')
                     ->paginate(5);
-        return view('usuario.index', compact('usuarios'));
+        return view('usuario.index', compact('users'));
     }
 
     /**
@@ -53,12 +53,12 @@ class UsuarioController extends Controller
         //
 
         request()->validate([
-           'usu_nom' => 'required',
+           'name' => 'required',
             'usu_ape' => 'required',
             'fecha_naci' => 'required',
             'usu_gene' => 'required',
             'usu_tele' => 'required',
-            'usu_correo' => 'required',
+            'email' => 'required',
             'usu_docu' => 'required',
             'password' => 'required',
             'id_rol' => 'required',
@@ -67,12 +67,12 @@ class UsuarioController extends Controller
         ]);
         $usuario = new Usuario;
         //$flight->name = $request->name
-        $usuario->usu_nom = $request->usu_nom;
+        $usuario->name = $request->name;
         $usuario->usu_ape = $request->usu_ape;
         $usuario->fecha_naci = $request->fecha_naci;
         $usuario->usu_gene = $request->usu_gene;
         $usuario->usu_tele = $request->usu_tele;
-        $usuario->usu_correo = $request->usu_correo;
+        $usuario->email = $request->email;
         $usuario->usu_docu = $request->usu_docu;
         $usuario->password = Hash::make($request->password);
         $usuario->id_rol = $request->id_rol;
@@ -119,12 +119,12 @@ class UsuarioController extends Controller
     public function update(Request $request, $id)
     {
         request()->validate([
-            'usu_nom' => 'required',
+            'name' => 'required',
              'usu_ape' => 'required',
              'fecha_naci' => 'required',
              'usu_gene' => 'required',
              'usu_tele' => 'required',
-             'usu_correo' => 'required',
+             'email' => 'required',
              'usu_docu' => 'required',
              'password'=>'required',
              'id_rol' => 'required',

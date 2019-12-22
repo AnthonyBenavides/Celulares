@@ -8,20 +8,31 @@
 		<div class="col-sm">
 			<div class="card" style="margin-top: 10px;">
 				<div class="card-body">
-					<form method="POST" action="/usuario/{{$usuario->id_usu}}" accept-charset="UTF-8" style="display:inline">
+					<form method="POST" action="/usuario/{{$usuario->id}}" accept-charset="UTF-8" style="display:inline">
 						@csrf			
 						<input type="hidden" name="_method" value="PUT">
 						
 						<div class="form-group">
-							<label for="usu_nom">usuario</label>
-							<input type="text" value = '{{$usuario->usu_nom}}'class="form-control" name="usu_nom"/>
-							{!! $errors->first('usu_nom', '<div class="alert alert-danger" role="alert">:message</div>')!!}
+							<label for="name">usuario</label>
+							<input type="text" value = '{{$usuario->name}}'class="form-control" name="name"/>
+							{!! $errors->first('name', '<div class="alert alert-danger" role="alert">:message</div>')!!}
 						</div>
 						<div class="form-group">
 							<label for="usu_ape">Apellidos</label>
 							<input type="text" value = '{{$usuario->usu_ape}}' class="form-control" name="usu_ape"/>
 							{!! $errors->first('usu_ape', '<div class="alert alert-danger" role="alert">:message</div>')!!}
 						</div>
+						<div class="form-group">
+							<label for="usu_docu">Cedula</label>
+							<input type="text" value = '{{$usuario->usu_docu}}' class="form-control" name="usu_docu"/>
+							{!! $errors->first('usu_docu', '<div class="alert alert-danger" role="alert">:message</div>')!!}
+						</div>
+						<div class="form-group">
+							<label for="email">Correo</label>
+							<input type="text" value = '{{$usuario->email}}' class="form-control" name="email"/>
+							{!! $errors->first('email', '<div class="alert alert-danger" role="alert">:message</div>')!!}
+						</div>
+						
 						<div class="form-group">
 							<label for="fecha_naci">Fecha de nacimiento</label>
 							<input type="date" value = '{{$usuario->fecha_naci}}' class="form-control" name="fecha_naci"/>
@@ -37,15 +48,11 @@
 							<input type="text" value = '{{$usuario->usu_tele}}' class="form-control" name="usu_tele"/>
 							{!! $errors->first('usu_tele', '<div class="alert alert-danger" role="alert">:message</div>')!!}
 						</div>
+						
 						<div class="form-group">
-							<label for="usu_correo">Correo</label>
-							<input type="text" value = '{{$usuario->usu_correo}}' class="form-control" name="usu_correo"/>
-							{!! $errors->first('usu_correo', '<div class="alert alert-danger" role="alert">:message</div>')!!}
-						</div>
-						<div class="form-group">
-							<label for="usu_docu">Cedula</label>
-							<input type="text" value = '{{$usuario->usu_docu}}' class="form-control" name="usu_docu"/>
-							{!! $errors->first('usu_docu', '<div class="alert alert-danger" role="alert">:message</div>')!!}
+							<label for="password">Contraseña</label>
+							<input type="text" value = '{{$usuario->password}}' class="form-control" name="password"/>
+							{!! $errors->first('password', '<div class="alert alert-danger" role="alert">:message</div>')!!}
 						</div>
 						<div class="form-group">
 							<label for="id_rol">Rol</label>

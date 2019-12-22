@@ -22,4 +22,6 @@ Route::resource('proveedor', 'ProveedorController');
 Route::resource('rol', 'RolController');
 Route::resource('estado', 'EstadoController');
 Route::resource('local', 'LocalController');
-Route::resource('usuario', 'UsuarioController');
+Route::resource('usuario', 'UserController');
+
+Auth::routes();

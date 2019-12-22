@@ -23,15 +23,27 @@
 					@csrf			
 					<div class="form-group">
 						<label for="usuario">Nombre </label>
-						<input type="text" class="form-control" name="usu_nom" id="usu_nom" aria-describedby="usuariolHelp"
-						value={{old('usu_nom')}}>
-						{!! $errors->first('usu_nom', '<div class="alert alert-danger" role="alert">:message</div>')!!}
+						<input type="text" class="form-control" name="name" id="name" aria-describedby="usuariolHelp"
+						value={{old('name')}}>
+						{!! $errors->first('name', '<div class="alert alert-danger" role="alert">:message</div>')!!}
 					</div>
 					<div class="form-group">
 						<label for="apellidos">Apellidos</label>
 						<input type="text" class="form-control" name="usu_ape" id="usu_ape" aria-describedby="usuariolHelp"
 						value={{old('usu_ape')}}>
 						{!! $errors->first('usu_ape', '<div class="alert alert-danger" role="alert">:message</div>')!!}
+					</div>
+					<div class="form-group">
+						<label for="cedula">Cedula</label>
+						<input type="text" class="form-control" name="usu_docu" id="usu_docu" aria-describedby="usuariolHelp"
+						value={{old('usu_docu')}}>
+						{!! $errors->first('usu_docu', '<div class="alert alert-danger" role="alert">:message</div>')!!}
+					</div>
+					<div class="form-group">
+						<label for="correo">Correo</label>
+						<input type="text" class="form-control" name="email" id="email" aria-describedby="usuariolHelp"
+						value={{old('email')}}>
+						{!! $errors->first('email', '<div class="alert alert-danger" role="alert">:message</div>')!!}
 					</div>
 					<div class="form-group">
 						<label for="fecha_naci">Fecha de nacimiento</label>
@@ -50,20 +62,15 @@
 						<input type="text" class="form-control" name="usu_tele" id="usu_tele" aria-describedby="usuariolHelp"
 						value={{old('usu_tele')}}>
 						{!! $errors->first('usu_tele', '<div class="alert alert-danger" role="alert">:message</div>')!!}
-					</div>
+					</div>					
+					
 					<div class="form-group">
-						<label for="correo">Correo</label>
-						<input type="text" class="form-control" name="usu_correo" id="usu_correo" aria-describedby="usuariolHelp"
-						value={{old('usu_correo')}}>
-						{!! $errors->first('usu_correo', '<div class="alert alert-danger" role="alert">:message</div>')!!}
+						<label for="password">Contraseña</label>
+						<input type="text" class="form-control" name="password" id="password" aria-describedby="usuariolHelp"
+						value={{old('password')}}>
+						{!! $errors->first('password', '<div class="alert alert-danger" role="alert">:message</div>')!!}
 					</div>
-					<div class="form-group">
-						<label for="cedula">Cedula</label>
-						<input type="text" class="form-control" name="usu_docu" id="usu_docu" aria-describedby="usuariolHelp"
-						value={{old('usu_docu')}}>
-						{!! $errors->first('usu_docu', '<div class="alert alert-danger" role="alert">:message</div>')!!}
-					</div>
-					<div class="form-group">
+				<div class="form-group">
 						<label for="rol">Rol</label>
 						<select name='id_rol' class = 'form-control'>
 							<option value="">Seleccione uno ... </option>
