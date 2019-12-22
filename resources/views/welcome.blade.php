@@ -126,28 +126,13 @@
             <div class="content">
                 <div class="title m-b-md">
                     Salma Celulares
-<<<<<<< HEAD
                     
-=======
->>>>>>> 882b35b25c99d7a52c0e8e5cbd82e07d63786d1e
                 </div>
 
                 <div >
                   
-<<<<<<< HEAD
                      <a >Comunicacion y accesorios</a>
                     
-=======
-                    <a href="{{route('movimiento.index')}}">Listado Movimientos</a>
-                     <a href="{{route('producto.index')}}">Listado Productos</a>
-                     <a href="{{route('marca.index')}}">Listado Marcas</a>
-                     <a href="{{route('proveedor.index')}}">Listado Proveedores</a>
-                     <a href="{{route('rol.index')}}">Listado Roles</a>
-                     <a href="{{route('asesor.index')}}">Asesores</a>
-                     <a href="{{route('estado.index')}}">Estados</a>
-                     <a href="{{route('local.index')}}">Locales</a>
-                     <a href="{{route('usuario.index')}}">Usuarios</a>
->>>>>>> 882b35b25c99d7a52c0e8e5cbd82e07d63786d1e
                 </div>
           </div>
     </body>
