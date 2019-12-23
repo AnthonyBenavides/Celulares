@@ -16,3 +16,12 @@ Route::get('/', function () {
 });
 
 Route::resource('producto', 'ProductoController');
+Route::resource('asesor', 'AsesorController');
+Route::resource('marca', 'MarcaController');
+Route::resource('proveedor', 'ProveedorController');
+Route::resource('rol', 'RolController');
+Route::resource('estado', 'EstadoController');
+Route::resource('local', 'LocalController');
+Route::resource('usuario', 'UserController');
+Route::resource('movimiento', 'MovimientoController');
+Auth::routes();
